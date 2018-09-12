@@ -14,6 +14,6 @@ namespace SGCI.ApplicationCore.Entity
         [Display(Name = "EUR")]
         Euro = 3,
         [Display(Name = "GBP")]
-        LibraEsterlina = 4,
+        LibraEsterlina = 4
     }
 }

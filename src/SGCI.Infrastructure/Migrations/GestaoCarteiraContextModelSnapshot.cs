@@ -48,7 +48,7 @@ namespace SGCI.Infrastructure.Migrations
 
                     b.Property<decimal>("Saldo");
 
-                    b.Property<string>("TipoMoeda");
+                    b.Property<int>("TipoMoeda");
 
                     b.Property<int>("UsuarioId");
 
@@ -96,9 +96,7 @@ namespace SGCI.Infrastructure.Migrations
 
                     b.Property<DateTime>("DataCadastro");
 
-                    b.Property<string>("Descricao")
-                        .IsRequired()
-                        .HasColumnType("varchar(230)");
+                    b.Property<int>("TipoMovimentacao");
 
                     b.Property<decimal>("Valor");
 

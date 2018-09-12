@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 using System.ComponentModel.DataAnnotations.Schema;
+using System.ComponentModel.DataAnnotations;
 
 namespace SGCI.ApplicationCore.Entity
 {
@@ -17,6 +18,8 @@ namespace SGCI.ApplicationCore.Entity
 
         public int MovimentacaoId { get; set; }
 
+        [DataType(DataType.Date)]
+        [DisplayFormat(DataFormatString = "{0:dd-MM-yyyy}", ApplyFormatInEditMode = true)]
         public DateTime DataCadastro { get; set; }
 
         [ForeignKey("Conta")]

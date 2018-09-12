@@ -12,5 +12,6 @@ namespace SGCI.ApplicationCore.Entity
         public string Email { get; set; }
 
         public ICollection<Conta> Contas { get; set; }
+        //
     }
 }

@@ -14,7 +14,7 @@ namespace SGCI.Infrastructure.Data
 
         }
         // mapeamento
-        public DbSet<Lancamento> Movimentacaos { get; set; }
+        public DbSet<Movimentacao> Movimentacaos { get; set; }
         public DbSet<Conta> Contas { get; set; }
         public DbSet<Categoria> Categorias { get; set; }
         public DbSet<Lancamento> Lancamentos { get; set; }
@@ -23,7 +23,7 @@ namespace SGCI.Infrastructure.Data
         ///Fluent Api
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.Entity<Lancamento>().ToTable("Movimentacao");
+            modelBuilder.Entity<Movimentacao>().ToTable("Movimentacao");
             modelBuilder.Entity<Conta>().ToTable("Conta");
             modelBuilder.Entity<Lancamento>().ToTable("Lancamento");
             modelBuilder.Entity<Categoria>().ToTable("Categoria");

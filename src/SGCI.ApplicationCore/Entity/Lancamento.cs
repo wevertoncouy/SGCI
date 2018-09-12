@@ -18,6 +18,8 @@ namespace SGCI.ApplicationCore.Entity
         [Key]
         public int LancamentoId { get; set; }
 
+        [DataType(DataType.Date)]
+        [DisplayFormat(DataFormatString = "{0:dd-MM-yyyy}", ApplyFormatInEditMode = true)]
         public DateTime DataLancamento { get; set; }
 
         [ForeignKey("Categoria")]

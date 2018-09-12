@@ -10,6 +10,6 @@ namespace SGCI.ApplicationCore.Entity
         [Display(Name = "Depósito")]
         Deposito = 1,
         [Display(Name = "Saque")]
-        Saque = 2,
+        Saque = 2
     }
 }
