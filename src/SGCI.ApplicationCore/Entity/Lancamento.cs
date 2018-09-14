@@ -37,8 +37,8 @@ namespace SGCI.ApplicationCore.Entity
         public Conta Conta { get; set; }
 
         public StatusLancamento StatusLancamento { get; set; }
+      
 
 
-    
     }
 }

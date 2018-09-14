@@ -6,6 +6,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Content Remove="Views\Chart\morris.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Content Include="wwwroot\AdminLTE\bower_components\bootstrap-colorpicker\.bower.json" />
     <Content Include="wwwroot\AdminLTE\bower_components\bootstrap-colorpicker\bower.json" />
     <Content Include="wwwroot\AdminLTE\bower_components\bootstrap-colorpicker\dist\css\bootstrap-colorpicker.css" />
@@ -1975,6 +1979,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Include="Views\Chart\morris.cshtml" />
     <None Include="wwwroot\AdminLTE\bower_components\bootstrap-colorpicker\CONTRIBUTING.md" />
     <None Include="wwwroot\AdminLTE\bower_components\bootstrap-colorpicker\dist\css\bootstrap-colorpicker.css.map" />
     <None Include="wwwroot\AdminLTE\bower_components\bootstrap-colorpicker\dist\css\bootstrap-colorpicker.min.css.map" />
