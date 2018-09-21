@@ -5,31 +5,36 @@
 }
 
 <h2>Index</h2>
+<ul class="nav navbar-nav navbar-right">
 
-<p>
-    <a asp-action="Create">Create New</a>
-</p>
-<table class="table">
-    <thead>
-        <tr>
+    <li>@Html.ActionLink("Lançamento", "Create", "Lancamento", new { }, new { @Class = "btn btn-primary" })</li>
+</ul>
+
+    <p>
+        <a asp-action="Create">Create New</a>
+    </p>
+    <table class="table">
+        <thead>
+            <tr>
                 <th>
                     @Html.DisplayNameFor(model => model.Descriao)
                 </th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.Descriao)
-            </td>
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.CategoriaId">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.CategoriaId">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.CategoriaId">Delete</a>
-            </td>
-        </tr>
-}
-    </tbody>
-</table>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Descriao)
+                    </td>
+                    <td>
+                        <a asp-action="Edit" asp-route-id="@item.CategoriaId">Edit</a> |
+                        <a asp-action="Details" asp-route-id="@item.CategoriaId">Details</a> |
+                        <a asp-action="Delete" asp-route-id="@item.CategoriaId">Delete</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>

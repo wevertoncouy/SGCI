@@ -4,13 +4,22 @@
     ViewData["Title"] = "Create";
 }
 
-<h2>Create</h2>
+
+
+
+
+
 
 <h4>Lancamento</h4>
+
+
 <hr />
+
+
 <div class="row">
     <div class="col-md-4">
         <form asp-action="Create">
+
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="form-group">
                 <label asp-for="DataLancamento" class="control-label"></label>
@@ -19,11 +28,11 @@
             </div>
             <div class="form-group">
                 <label asp-for="CategoriaId" class="control-label"></label>
-                <select asp-for="CategoriaId" class ="form-control" asp-items="ViewBag.CategoriaId"></select>
+                <select asp-for="CategoriaId" class="form-control" asp-items="ViewBag.CategoriaId"></select>
             </div>
             <div class="form-group">
                 <label asp-for="ContaId" class="control-label"></label>
-                <select asp-for="ContaId" class ="form-control" asp-items="ViewBag.ContaId"></select>
+                <select asp-for="ContaId" class="form-control" asp-items="ViewBag.ContaId"></select>
             </div>
             <div class="form-group">
                 <label asp-for="Valor" class="control-label"></label>
@@ -44,8 +53,14 @@
                 <input type="submit" value="Create" class="btn btn-default" />
             </div>
         </form>
+
     </div>
+    <ul class="form-groupt">
+        @Html.ActionLink("Criar Categoria", "Create", "Categoria", new { }, new { @Class = "btn btn-primary" })
+    </ul>
+
 </div>
+
 
 <div>
     <a asp-action="Index">Back to List</a>

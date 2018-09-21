@@ -34,7 +34,7 @@ namespace SGCI.UI.Web.Controllers
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
 
-        public IActionResult Login() // Teste Login 
+        public IActionResult Login() //  Login 
         {
             return View();
         }
